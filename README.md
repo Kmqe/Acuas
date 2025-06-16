@@ -52,7 +52,7 @@ npm install
 npm run start
 ```
 
-5. 🎉 Enjoy!
+4. 🎉 Enjoy!
 
 ⭐ **Star this project if you find it useful!** ⭐
 
