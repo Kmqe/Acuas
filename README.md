@@ -16,8 +16,6 @@ we provide fresh, healthy, and cool drinking water delivered straight to your ho
 - **React**
 - **JavaScript**
 - **CSS**
-- **react-router-dom**
-- **swiper**
 
 ## 📦 Libraries
 
