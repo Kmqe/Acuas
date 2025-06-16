@@ -1,0 +1,114 @@
+.about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.about .img-content {
+  padding: 35px 35px 0 0;
+  position: relative;
+}
+
+.about .img-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 10px;
+  border-radius: 15px;
+  background-color: #19409a;
+}
+.about .img-content::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #19409a;
+}
+
+.about .img-content h2 {
+  position: absolute;
+  background-color: #19409a;
+  color: white;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  padding: 20px 50px;
+  border-end-end-radius: 15px;
+  font-weight: 600;
+}
+
+.about .img-fream {
+  height: 100%;
+}
+
+.about .img-fream img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about .about-data .heading {
+  text-align: right;
+}
+
+.about .about-data .heading .description {
+  font-size: 47px;
+}
+
+.about .about-data > p {
+  color: gray;
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.about .about-data .card {
+  background-color: #f2f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.about .about-data .card .icon button {
+  font-size: 30px;
+}
+
+.about .about-data .text h2 {
+  font-weight: 500;
+  color: #19409a;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.about .about-data .text h2:hover {
+  color: #00d1f9;
+}
+
+.about .about-data .text p {
+  color: gray;
+  margin-top: 5px;
+}
+
+.about .about-data .card + button {
+  padding: 15px 40px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about .img-fream img {
+    width: 100%;
+  }
+}

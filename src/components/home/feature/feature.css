@@ -1,0 +1,100 @@
+.feature {
+  background-color: #f2f9f9;
+}
+
+.feature .feature-cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* [Start] Styles for FeatureCard Component */
+.feature .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  padding: 20px 20px 80px;
+  border-radius: 10px;
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+.feature .card:hover {
+  box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature .card .icon-box {
+  transform: rotate(0deg);
+  transition: 0.6s;
+}
+
+.feature .card:hover .icon-box {
+  transform: rotate(360deg);
+}
+
+.feature .card .icon-box button {
+  margin: 10px auto;
+  font-size: 50px;
+  font-size: 45px;
+}
+
+.feature .card h4 {
+  font-size: 20px;
+  transition: 0.3s;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.feature .card h4:hover {
+  color: #00d1f9;
+}
+
+.feature .card h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #19409a;
+  transition: 0.4s;
+}
+
+.feature .card h6 .angle-right {
+  margin-top: 3px;
+}
+
+.feature .card h6:hover {
+  color: #00d1f9;
+}
+/* [End] Styles for FeatureCard Component */
+
+@media screen and (max-width: 1200px) {
+  .feature .feature-cards {
+    grid-template-columns: repeat(2, 450px);
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .feature .feature-cards {
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .feature .feature-cards {
+    grid-template-columns: repeat(1, minmax(200px, 400px));
+    justify-content: center;
+    gap: 20px;
+  }
+}

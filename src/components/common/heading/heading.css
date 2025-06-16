@@ -1,0 +1,21 @@
+.heading {
+  text-align: center;
+}
+
+.heading .title {
+  color: #00d1f9;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.heading .description {
+  color: #001442;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .heading .description {
+    font-size: 35px;
+  }
+}

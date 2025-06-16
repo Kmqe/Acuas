@@ -1,0 +1,124 @@
+section.contact {
+  background-color: #f2f9f9;
+  padding-bottom: 100px;
+}
+
+section.contact .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+section.contact .container .form-content {
+  text-align: center;
+}
+
+section.contact .form-content h4 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #00d1f9;
+}
+
+section.contact .form-content h1 {
+  font-size: 50px;
+  color: #001138;
+}
+
+section.contact .form-content .input-content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+section.contact .form-content .input-content input,
+section.contact .form-content textarea {
+  padding: 10px 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  border: 5px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+section.contact .form-content textarea {
+  margin-top: 20px;
+  width: 100%;
+  resize: vertical;
+  min-height: 150px;
+}
+
+section.contact .form-content .input-content input:focus,
+section.contact .form-content textarea:focus {
+  outline: none;
+  border: 5px solid rgba(0, 209, 249, 0.25);
+}
+
+section.contact .form-content button {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 11px;
+}
+
+section.contact .info-content .contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.contact .info-content .contact-content > .box-info:first-child {
+  width: 100%;
+}
+
+section.contact .info-content .contact-content .box-info {
+  display: flex;
+  flex: 1;
+  background-color: white;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section.contact .info-content .contact-content .box-info p {
+  color: #888;
+}
+
+section.contact .info-content .contact-content .children-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+section.contact .contact-content .box-info .icon {
+  font-size: 30px;
+  color: #153682;
+}
+
+section.contact .map {
+  margin-top: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+section.contact .map iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  section.contact .form-content .input-content {
+    grid-template-columns: 1fr;
+  }
+
+  section.contact .children-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section.contact .container {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+}

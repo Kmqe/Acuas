@@ -1,0 +1,43 @@
+.hero {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/images/hero-bg.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 100px;
+}
+
+.hero h5 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.hero .buttons button {
+  padding: 10px 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    padding: 0 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero .buttons button {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}

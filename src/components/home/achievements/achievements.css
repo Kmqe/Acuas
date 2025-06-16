@@ -1,0 +1,62 @@
+.achievement {
+  background: linear-gradient(
+      rgba(50, 50, 177, 0.884),
+      rgba(50, 50, 177, 0.959)
+    ),
+    url("/public/images/achievements.jpg");
+  background-repeat: no-repeat;
+  height: 400px;
+  /* margin-top: 100px; */
+  padding: 100px 0;
+}
+
+.achievement .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.achievement .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.achievement .box button {
+  font-size: 50px;
+}
+
+.achievement .box h1 {
+  font-weight: 500;
+}
+
+.achievement .box h2 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .achievement {
+    height: fit-content;
+    background: linear-gradient(
+        rgba(50, 50, 177, 0.964),
+        rgba(50, 50, 177, 0.959)
+      ),
+      url("/public/images/achievements.jpg");
+    background-size: cover;
+  }
+
+  .achievement .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .achievement .container {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement .box:not(:first-of-type) {
+    margin-top: 50px;
+  }
+}

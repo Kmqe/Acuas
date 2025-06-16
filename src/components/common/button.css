@@ -1,0 +1,55 @@
+.button {
+  padding: 10px 20px;
+  color: white;
+  font-family: "cairo";
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.center {
+  position: relative;
+  border-radius: 50px;
+}
+
+.center .icon {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.light {
+  background-color: #00d1f9;
+}
+
+button.light:hover {
+  background-color: #19409a;
+}
+
+button.dark {
+  background-color: #19409a;
+  transition: 0.4s;
+}
+
+button.dark:hover {
+  background-color: #00d1f9;
+}
+
+button.normal {
+  background-color: #00d1f9;
+  color: transparent;
+}
+
+button.transparent {
+  background-color: transparent;
+  color: #19409a;
+  transition: 0.3s;
+}
+
+button.transparent:hover {
+  color: #00d1f9;
+}

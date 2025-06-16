@@ -1,0 +1,38 @@
+.intro_page {
+  height: 400px;
+  background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)),
+    url("/public/images/breadcrumb_section.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro_page h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.intro_page p {
+  color: white;
+}
+
+.intro_page .path_page {
+  display: flex;
+  gap: 15px;
+}
+
+.intro_page p.slash {
+  color: rgba(255, 255, 255, 0.493);
+  font-weight: lighter;
+}
+
+.intro_page p.active {
+  color: #00d1f9;
+}
+
+@media screen and (max-width: 568px) {
+  .intro_page h1 {
+    font-size: 40px;
+  }
+}

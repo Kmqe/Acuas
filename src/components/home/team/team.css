@@ -1,0 +1,132 @@
+.team {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.team .container .card {
+  border: 1px solid #001442;
+  padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team .container .card .inner-card {
+  transition: 0.4s;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.team .container .card:hover .inner-card {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+}
+
+.team .container .card .img {
+  position: relative;
+}
+
+.team .container .card .img img {
+  border-radius: 20px 20px 0 0;
+}
+
+.team .container .card .img .icon-share {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  transition: 1s;
+  opacity: 1;
+}
+
+.team .container .card:hover .icon-share {
+  opacity: 0;
+}
+
+.team .container .card .img .bg-cover {
+  transition: 0.4s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 209, 249, 0.2);
+}
+
+.team .container .card:hover .bg-cover {
+  height: 100%;
+}
+
+.team .container .card .icon-share button {
+  font-size: 16px;
+}
+
+.team .container .card .text {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f2f9f9;
+}
+
+.team .container .card .text h2 {
+  font-weight: 500;
+  color: #001442;
+}
+
+.team .container .card .text p {
+  color: gray;
+}
+
+.team .container .card .social-icons {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  right: -200px;
+  bottom: 140px;
+  padding: 10px;
+  width: fit-content;
+  background-color: #00d1f9;
+  border-radius: 50px 0 0 50px;
+  transition: 0.3s;
+}
+
+.team .container .card .social-icons button {
+  font-size: 18px;
+}
+
+.team .container .card .social-icons button:hover {
+  cursor: pointer;
+}
+
+.team .container .card:hover .social-icons {
+  right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .team .container {
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+    justify-content: center;
+  }
+
+  .team .container .card .img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .team .container {
+    grid-template-columns: repeat(2, minmax(200px, 300px));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team .container {
+    grid-template-columns: minmax(0, 400px);
+  }
+}

@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+/*============ Global Rules ============*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: "cairo", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+ul {
+  list-style: none;
+}
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+input,
+button {
+  outline: none;
+  border: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.border {
+  border: 3px solid red;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    /* width: 750px; */
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    /* width: 970px; */
+  }
+}
+/* Large */
+/* @media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+} */
+
+@media (min-width: 1340px) {
+  .container {
+    width: 1300px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Font Cairo */
+
+@font-face {
+  font-family: cairo;
+  src: url("../public/fonts/Arabic/cairo/Cairo-Black.ttf");
+  font-weight: 900;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: cairo;
+  src: url("../public/fonts/Arabic/cairo/Cairo-Bold.ttf");
+  font-weight: 800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: cairo;
+  src: url("../public/fonts/Arabic/cairo/Cairo-ExtraBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: cairo;
+  src: url("../public/fonts/Arabic/cairo/Cairo-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: cairo;
+  src: url("../public/fonts/Arabic/cairo/Cairo-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: cairo;
+  src: url("../public/fonts/Arabic/cairo/Cairo-SemiBold.ttf");
+  font-weight: 200;
 }
